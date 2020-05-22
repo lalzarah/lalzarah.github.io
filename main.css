@@ -3,32 +3,38 @@
 GENERAL
 **************************************/
 a {
- text-decoration: none;
+ text-decoration: underline;
  }
 
 img {
 max-width: 100%;
-
+display:block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
 }
 
 
 
- body {
-   font-family: 'Open Sans', sans-serif;
+ html, body {
+   font-family: "Arial", Helvetica, sans-serif;
+	height: 100%;
+
  }
 
 
  #wrapper {
-   max-width: 940px;
+   max-width: 1020px;
    margin: 0 auto;
-   padding: 0 5%;
+   
+   height: 100%;
 
+ 
  }
 
 
-
  a {
-   color: #6ab47b;
+   color: MEDIUMSLATEBLUE;
 
  }
 
@@ -43,8 +49,8 @@ HEADING
 
 header {
   float: left;
-  margin: 0 0 20px 0;
-  padding: 2px 0 0 0;
+  margin: 0 0 0 0;
+  padding: 0 0 0 0;
   width: 100%;
 
 }
@@ -58,7 +64,7 @@ header {
  }
 
  h1  {
- font-family: 'Changa One', sans-serif;
+ font-family: "Arial", Helvetica, sans-serif;
  margin: 10px 0;
  font-size: 1.75em;
  font-weight: normal;
@@ -117,37 +123,62 @@ nav li {
 FOOTER
 **************************************/
  footer {
- font-size: 0.75em;
+ font-size: 1.1em;
  text-align: center;
  clear: both;
- padding-top: 50px;
+ padding-top: 10px;
  color: #ccc;
+ background-color: #000;
+    color: #fff;
+
+
+   left: 0;
+   bottom: 0;
+   width: 100%;
+
  }
 
 /*************************************
 PAGE:
 **************************************/
-.mydiv {background: lightblue; width:250px; height: 250px;}
+.mydiv {
+	background: lightblue;
+   text-align: center;
+   display: block;
+ 
+	}
 
+
+.mysection{
+	display:flex;
+	
+   vertical-align: middle;
+	border-style: solid;
+    height:200px;
+    margin:20px;
+    border-radius: 20px; 
+	text-align: justify;
+	vertical-align: middle;
+
+	
+}
 .myimage {
     float:left;
     width:150px;
     height:175px;
-    margin:20px;
-    border-radius: 20px;
+    margin:5px;
+    
 }
 
 
-
-
- /*************************************
-PAGE: ABOUT
-**************************************/
-.profile-photo {
+.logos {
+	float:left;
     display: block;
-    max-width: 400px;
+
     margin: 0 auto 30px;
     border-radius: 5px;
+	  width: 100px;
+  height: 100px;
 }
 
 /*************************************
@@ -157,8 +188,12 @@ COLORS
 
  /* green header*/
   header {
-   background: #6ab47b;
+	
+   background: PEACHPUFF;
    border-color: #599a68;
+   text-align:center;
+
+
  }
 
  /* logo text*/
@@ -184,4 +219,8 @@ nav a.selected, nav a:hover {
 body {
     background-color: #fff;
     color: #000;
+	background-image: url("background.jpg");
+	background-repeat: no-repeat;
+	background-size: cover; 
+	overflow:auto;
 }
